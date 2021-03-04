@@ -76,7 +76,7 @@ itterate through array and shift out elements into a new array. Find out if the 
 arrays - seems like the best choice to solve this problem. 
 
 ## Write out a few lines of initial pseudocode: (mid-level design, NOT REAL CODE)
-
+```
 def flatten_array(array)
  return new_array if array.length == 0 # break method if original array is gone
  element = array.shift #take out first element
@@ -87,13 +87,13 @@ def flatten_array(array)
  end
  flatten_array(array) # rerun method until there are no more elements
 end
-
+```
  
 
 ## Write out any implementation code OR link to repl
 
 https://repl.it/join/urtdnqdc-connorferguson
-
+```
 class Flattener
 
   def flatten(array, new_array = [])
@@ -119,7 +119,7 @@ string_arr = ["hi", "this is", [[["string"], "that is very"], [[[["nested"]]]]]]
 new_array = flattener.flatten(string_arr)
 puts 
 print new_array
-
+```
 ## What is the Big O complexity of your solution?
 
 I believe this is O(n^2) since I am interating over each element and then running the function again if it is another array. 
