@@ -97,7 +97,7 @@ https://repl.it/join/urtdnqdc-connorferguson
 class Flattener
 
   def flatten(array, new_array = [])
-    return new_array if array.length == 0
+    return new_array if array[0].nil?
     element = array.shift
     if element.class == Array
       flatten(element, new_array)
